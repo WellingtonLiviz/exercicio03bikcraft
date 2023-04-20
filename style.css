@@ -46,16 +46,6 @@ img{
   grid-template-columns: 1fr 1fr;
   max-width: 1000px;/*deixa o container limitado a 1000px*/
 }
-@media(max-width:600px){
-  .container{
-    display: grid;
-    grid-template-columns: 1fr ;
-    max-width: 500px;/*deixa o container limitado a 1000px*/
-  }
-  .detalhe{
-    display: none;
-  }
-}
 
 .texto-1{
   background-color: #fff;
@@ -66,8 +56,8 @@ img{
   align-content: center; /*para alinhar referente ao centro da imagem ao lado*/
   gap: 20px;
   justify-items: end;
-
 }
+
 .detalhe{
   width: 60px;
   height: 4px;
@@ -114,7 +104,62 @@ img{
   box-sizing: border-box;
 }
 
+@media(max-width:600px){
+  .container{
+    display: grid;
+    grid-template-columns: 1fr ;
+    max-width: 300px;/*deixa o container limitado a 1000px*/
+    margin: 0px auto;
+  }
 
+  .detalhe{
+    display: none;
+  }
+  .subtitulo{
+    font-size: 34px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.2) ;
+    text-align: right;
+    padding: 10px;
+    align-self: center; /*serve para alinhar um unico item no centro*/
+  }
+  .rodape{
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .vantagens{
+    background-color: #fff;
+    padding: 10px;
+  }
+  .texto-1{
+    background-color: #fff;
+    padding: 10px; /*desgrudar elementos das bordas do container*/
+    text-align: right;
+    position: relative;
+    display: grid;
+    align-content: center; /*para alinhar referente ao centro da imagem ao lado*/
+    gap: 10px;
+    justify-items: end;
+  }
+  .menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /*alinha os itens ao centro quando quebra a linha*/
+    gap: 10px;
+  }
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: #f7f7f7;
+    display: grid;
+    gap: 20px;
+    justify-items: center;/*centraliza todos itens do body*/
+    margin-top: 20px;
+  }
+
+}
 
 
 
@@ -129,8 +174,5 @@ img{
 
 
 footer{
-  
-  
   text-align: center;
- 
 }
